@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, Roboto, Arial, sans-serif;
+  background-color: rgb(243, 243, 243);
+  font-size: 16px;
+  line-height: 1;
+}
+.strip {
+  width: 100vw;
+  height: 43px;
+  position: relative;
+}
+.strip-image {
+  width: 100%;
+  height: 100%;
+}
+.strip-text{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+.strip-text-right {
+  position: absolute;
+  top: 30%;
+  right: 70%;
+  font-size: 1rem;
+  opacity: 0;
+  word-spacing: 0.6rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out; /* Fixed spacing here */
+  animation: slideUp 3s ease-in-out forwards; /* Matching animation name */
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%); /* Starts below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ends in the original position */
+  }
+}
+
+
+.strip-text-right:hover{
+  color: #fff;
+}
+.strip-text-btn{
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+.strip-text-btn-link:hover{
+  color: #fff;
+}
+.line{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.container {
+  margin-left: 5.1rem;
+  margin-right: 5.1rem;
+}
+header.header-nav {
+  background-color: #fff;
+  width: 100ww;
+  height: 8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.top-headbar {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+}
+.top-container {
+  border-bottom: 1px solid rgb(156, 153, 153);
+}
+
+.logo {
+  width: 5.7rem;
+  height: 3rem;
+}
+.logo .nykaa-logo {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 5.1rem; */
+}
+.navbar {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem 2rem 0.2rem 3rem;
+  padding: 0 4rem, 0, 1rem;
+}
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 2rem;
+  margin-top: 0.6rem;
+}
+.navbar-list-item {
+  display: inine;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  /* letter-spacing: 0.1px; */
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: #03021ac4;
+  margin: 0 auto;
+}
+.navbar-list-item a {
+  text-decoration: none;
+  color: #03021ac4;
+}
+.navbar-list-item a:hover {
+  color: #ff087f;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.searchbar-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.search-item {
+  width: 230px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(151, 151, 151, 0.1);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  box-shadow: 0.2px 0.1px 0.3px 0.4px rgba(0, 0, 0, 0.103);
+  background-color: rgba(151, 151, 151, 0.1);
+  padding-left: 35px;
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  color: gray;
+}
+.search-item:focus {
+  border: 1px solid #e80071; /* Pink border on focus */
+  outline: none; /*Remove the default outline */
+  width: 350px;
+}
+.search-item:focus ~ .sign-in-btn {
+  display: none; /* Hide the sign-in button */
+}
+
+.head-btn {
+  margin: 10px 20px 10px 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.sign-in-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  letter-spacing: 0.1px;
+  border-radius: 8px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: #e80071;
+  color: #fff;
+  border-radius: 4px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.sign-in-btn:hover {
+  background-color: #ff087f;
+}
+.bag-icon {
+  margin: 15px 20px 10px 20px;
+}
+.bag {
+  color: #e80071;
+  font-size: 10px;
+}
+.down-header {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down-header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.down-header-list-items {
+  list-style: none;
+}
+.down-header-list-items a {
+  text-decoration: none;
+  color: #03021ac4;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.down-header-list-items a:hover {
+  color: #ff087f;
+  border-bottom: 3px solid #ff0e82;
+  font-weight: 600;
+}
+.down-header-list .offers {
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: rgb(255, 0, 86);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 0, 86, 1) 55%,
+    rgba(180, 58, 163, 1) 85%
+  );
+}
+.down-header-list .offers a {
+  color: #fff;
+}
+.down-header-list .offers a:hover {
+  color: #fff;
+  border-bottom: none;
+  background: none;
+}
