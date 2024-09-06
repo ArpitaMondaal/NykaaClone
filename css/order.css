@@ -18,6 +18,7 @@
   }
   header{
     display: flex;
+    justify-content: space-between;
     position: relative;
     border-bottom: 1px solid gray;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -47,7 +48,7 @@
   .header-right{
     position: absolute;
     margin:2rem 5rem 2rem 3rem;
-    left: 70%;
+    left: 50%;
     
   }
   .header-right a{
@@ -58,7 +59,24 @@
     letter-spacing: 0.5rem;
     word-spacing: 1rem;
   }
-
+  .bag{
+    position: relative; /* Establish a relative positioning context */
+  display: inline-block; /* Ensure it wraps around the icon and count */
+  margin-top: 1rem;
+  margin-right: 3rem;
+  font-size: 1rem;
+  }
+  .bag-count {
+    position: absolute; /* Position it relative to the parent container */
+  top: -10px; /* Adjust the vertical position */
+  right: -10px; /* Adjust the horizontal position */
+  font-size: 0.8rem; /* Adjust the size of the number */
+  border-radius: 40%; /* Optional: Make it round */
+  padding: 2px 6px; /* Optional: Add padding */
+    font-weight: 400; /* Make the number bold */
+    background-color: #e80071;
+    color: #fff; /* Set the color */
+  }
   .container{
     display: flex;
     justify-content: space-between;
@@ -87,6 +105,11 @@
     letter-spacing: 0.5rem;
     word-spacing: 1rem;
 }
+.ordered-item-box{
+  border: 1px solid rgb(163, 157, 157);
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
 
 .ordered-item{
   padding: 2rem 2rem 1rem 2rem;
@@ -94,9 +117,9 @@
   justify-content: space-between;
   border-bottom: 1px solid gray;
 }
+
 .ordered-item-description{
   margin: 2rem 0;
-  border: 1px solid rgb(163, 157, 157);
   border-radius: 8px;
 }
 .ordered-item-image{
@@ -127,6 +150,7 @@
  margin: 0.5rem;
 }
 .payment-box{
+  height: 30rem;
   margin: 1rem 0;
   border: 1px solid rgb(163, 157, 157);
   border-radius: 8px;
@@ -168,3 +192,20 @@
   padding-bottom: 1rem;
   padding: 1rem;
 }
+.place-order{
+width: 100%;
+padding: 2rem 3rem;
+border-radius: 5px;
+margin-top: 2.5rem;
+height: 3.5rem;
+text-align: center;
+background-color: #e80071;
+}
+.place-order a{
+  
+text-decoration: none;
+font-size: 1.5rem;
+font-weight: 600;
+color: #fff;
+}
+          
