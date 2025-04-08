@@ -11,5 +11,4 @@ searchItem.addEventListener("blur", function () {
   bagIcon.style.visibility = "visible";
   signInBtn.style.visibility = "visible"; // Shows the bag icon when searchItem loses focus
 });
-a
 
